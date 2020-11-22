@@ -1,0 +1,29 @@
+{
+  "name": "public-procurement",
+  "version": "1.0.0",
+  "description": "",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test:local": "truffle test ./test/test-local/* --network local",
+    "compile:local": "truffle compile --reset --network local",
+    "migrate:local": "truffle migrate --reset --network local",
+    "console:kovan": "truffle console --network kovan",
+    "compile:kovan": "truffle compile --reset --network kovan",
+    "migrate:kovan": "truffle migrate --reset --network kovan",
+    "test:kovan": "truffle test ./test/test-kovan/* --network kovan",
+    "start-blank": "rm -rf client/src && cp -rf barebones/src client/",
+    "client": "cd client && npm run start"
+  },
+  "author": "masaun",
+  "license": "MIT",
+  "dependencies": {
+    "@openzeppelin/contracts": "^3.2.0",
+    "@truffle/hdwallet-provider": "^1.1.1",
+    "dotenv": "^8.2.0",
+    "eth-block-tracker": "^4.4.3",
+    "ethereumjs-tx": "^2.1.2"
+  },
+  "devDependencies": {}
+}
