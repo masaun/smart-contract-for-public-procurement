@@ -58,9 +58,18 @@ $ npm run test:local
 ***
 
 ## 【References】  
-- 3 major thematic areas (from the UNODC East Africa Blockchain Challenge in Gitcoin)
-  https://gitcoin.co/issue/gitcoinco/web/7911/100024083
+- 3 major thematic areas (from the UNODC East Africa Blockchain Challenge)
+  - Explanation
+    https://gitcoin.co/issue/gitcoinco/web/7911/100024083  
+    https://www.unodc.org/easternafrica/en/what-we-do/anti-corruption/eastern-africa-youth-block-chain-challenge.html  
+  
+  - Workshop
+    https://www.crowdcast.io/e/unodc-blockchain/register
 
+<br>
+
+
+- 3 major thematic areas (Remarks)
   - Whistle blower protection   
     https://www.unodc.org/e4j/en/anti-corruption/module-6/key-issues/whistle-blowing-systems-and-protections.html
   
