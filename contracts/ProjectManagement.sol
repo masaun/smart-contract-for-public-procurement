@@ -33,7 +33,7 @@ contract ProjectManagement is AccessControl {
         currentProjectId++;
 
         /// Create new contract
-        ProjectContract projectContract = new ProjectContract(bidder, contractName, contractSymbol, contractIpfsHash);
+        ProjectContract projectContract = new ProjectContract(newProjectId, bidder, contractName, contractSymbol, contractIpfsHash);
         projectContractList.push(address(projectContract));
 
         /// Grant an project admin
