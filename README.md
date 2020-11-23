@@ -2,7 +2,7 @@
 
 ***
 ## 【Introduction of the smart contract for Public Procurement 】  
-- 
+- This is a smart contract in order to realize a highly transparent public procurement (tender & bid).
 
 &nbsp;
 
@@ -41,7 +41,7 @@ $ npm run migrate:local
 
 <br>
 
-### ④ Test contracts  
+### ④ Test contracts (※ In progress)
 ```
 $ npm run test:local
 ```
