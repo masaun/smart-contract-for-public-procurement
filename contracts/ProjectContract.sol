@@ -14,30 +14,29 @@ contract ProjectContract is ERC721, AccessControl {
 
     uint8 public currentContractId;
 
-    bytes32 public constant CONTRACT_OWNER = keccak256("CONTRACT_OWNER");
+    bytes32 public constant BIDDER = keccak256("BIDDER");
 
     constructor(
-        address contractOwner, 
+        address bidder,  /// [Note]: A bidder is also a contract owner.
         string memory contractName, 
         string memory contractSymbol,
-        address to,
-        string memory ipfsHashOfContract
+        string memory contractIpfsHash
     ) 
         public 
         ERC721(contractName, contractSymbol) 
     {
-        /// Mint a NFT for a contract
-        mintContract(to, ipfsHashOfContract);
-
-        /// Grant the owner role of this contract
-        _setupRole(DEFAULT_ADMIN_ROLE, contractOwner);
+        /// Mint a NFT and register a contract
+        mintContract(bidder, contractIpfsHash);
     }
 
-    function mintContract(address to, string memory ipfsHashOfContract) internal returns (uint8 _newContractId) {
+    function mintContract(address bidder, string memory contractIpfsHash) internal returns (uint8 _newContractId) {
         uint8 newContractId = getNextContractId();
         currentContractId++;
-        _mint(to, newContractId);
-        _setTokenURI(newContractId, ipfsHashOfContract); 
+        _mint(bidder, newContractId);
+        _setTokenURI(newContractId, contractIpfsHash); 
+
+        /// Grant a bidder role
+        _setupRole(BIDDER, bidder);
 
         return newContractId;
     }
