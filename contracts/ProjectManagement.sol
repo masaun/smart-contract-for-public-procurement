@@ -15,6 +15,8 @@ contract ProjectManagement is AccessControl {
 
     uint8 public currentProjectId;
 
+    address[] projectContractList;
+
     bytes32 public constant PROJECT_ADMIN = keccak256("PROJECT_ADMIN");
 
     constructor() public {
@@ -32,6 +34,7 @@ contract ProjectManagement is AccessControl {
 
         /// Create new contract
         ProjectContract projectContract = new ProjectContract(bidder, contractName, contractSymbol, contractIpfsHash);
+        projectContractList.push(address(projectContract));
 
         /// Grant an project admin
         _setupRole(PROJECT_ADMIN, projectAdmin);
