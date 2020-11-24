@@ -3,10 +3,14 @@
 ***
 ## 【Introduction of the smart contract for Public Procurement 】  
 - This is a smart contract in order to realize a highly transparent public procurement (tender & bid).
-- Split a large contract into several small contracts.
-  - Publish NFTs for each project (bit & tender)
-  - Publish NFTs for each contract （in order to identify owner of each contracts ）
-    => Each NFT is associated with IPFS backed contract
+- Split a large contract into several small contracts. (and they are managed with NFTs)
+  - in order to avoid a corruption by giving a large contract (many amount) into a large company.
+  https://www.unodc.org/e4j/en/anti-corruption/module-4/key-issues/corruption-in-public-procurement.html
+    ↓
+  - By using blockchain for this issue, 
+    - Many small company get a opportunity.
+    - Realize a highly transparent public procurement (tender & bid).
+
 &nbsp;
 
 ***
