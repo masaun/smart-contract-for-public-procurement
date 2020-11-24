@@ -59,11 +59,11 @@ $ npm run test:local
 
 ## 【References】  
 - 3 major thematic areas (from the UNODC East Africa Blockchain Challenge)
-  - Explanation
-    https://gitcoin.co/issue/gitcoinco/web/7911/100024083  
+  - Explanation  
+    https://gitcoin.co/issue/gitcoinco/web/7911/100024083   
     https://www.unodc.org/easternafrica/en/what-we-do/anti-corruption/eastern-africa-youth-block-chain-challenge.html  
   
-  - Workshop
+  - Workshop  
     https://www.crowdcast.io/e/unodc-blockchain/register
 
 <br>
