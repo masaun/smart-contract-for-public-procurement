@@ -1,3 +1,5 @@
+[![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/masaun/smart-contract-for-public-procurement)
+
 # Smart contract for Public Procurement 
 
 ***
